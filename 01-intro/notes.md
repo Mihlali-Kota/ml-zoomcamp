@@ -49,3 +49,29 @@
 **Example:** Email spam detector
 
 **Still unsure about:** Nothing yet.
+
+## 1.5 Model Selection Process
+
+**In one sentence:** This lesson explained how we compare different models and select the best one, and how splitting the data into train, validation and test makes sure the model didn't just get lucky.
+
+**Key points:**
+- We train different models such as logistic regression, decision tree, random forest and neural network, then compare their accuracy on the validation set, which is data the models were not trained on. The best accuracy wins, so in the lesson's made-up example the neural network at 80% was selected.
+- A model can get lucky on the validation set, which is the multiple comparisons problem. In the coin example, one coin guessed the whole validation set correctly by chance, and a separate test set protects us from this.
+- We split the data into train, validation and test (e.g. 60%, 20% and 20%), train the models, evaluate them, select the best model, apply it to the test set and compare the validation and test performance. If the two are close, the model really does behave well.
+
+**Example:** Comparing coins as spam detectors, where one coin got lucky and scored 100%.
+
+**Still unsure about:** Nothing yet.
+
+## 1.6 Setting up the Environment
+
+**In one sentence:** This lesson showed how to set up the environment for the course, with GitHub Codespaces as the recommended option and local setups as alternatives.
+
+**Key points:**
+- The course needs Python, NumPy, Pandas, Scikit-Learn, Matplotlib, Seaborn and Jupyter notebooks, which are installed with pip (e.g. `pip install jupyter numpy pandas scikit-learn seaborn`).
+- GitHub Codespaces gives a ready-made remote environment in the browser or in VS Code, while the alternatives are a local setup, Anaconda, the cloud or notebook services like Kaggle and Colab.
+- I set up locally in VS Code with a virtual environment (`.venv`), installed the packages with pip, and saved them to `requirements.txt`.
+
+**Example:** Creating a `01-intro` folder with a notebook and running `import pandas as pd` to check that everything works.
+
+**Still unsure about:** Nothing yet.
