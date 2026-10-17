@@ -75,3 +75,29 @@
 **Example:** Creating a `01-intro` folder with a notebook and running `import pandas as pd` to check that everything works.
 
 **Still unsure about:** Nothing yet.
+
+## 1.7 Introduction to NumPy
+
+**In one sentence:** This lesson was a quick introduction to NumPy, the library we use to create arrays and do calculations on them.
+
+**Key points:**
+- Arrays can be created with `np.zeros`, `np.ones`, `np.full`, `np.array` (from a list), `np.arange` and `np.linspace`. Multi-dimensional arrays have rows and columns, and we access them with indexes such as `n[0, 1]` for one element or `n[:, 1]` for a whole column.
+- Random arrays are made with `np.random.rand`, `randn` and `randint`, and setting a seed with `np.random.seed()` makes the results the same every time we run the code.
+- Element-wise operations like `a + 1` or `a * 2` are applied to every element in the array. Comparison operations such as `a > b` give True/False arrays that can be used to select elements (`a[a > b]`), and summarizing operations like `min`, `max`, `sum`, `mean` and `std` give a single number.
+
+**Example:** Creating an array with `np.arange(5)` and adding 1 to every element with `a + 1`
+
+**Still unsure about:** Nothing yet.
+
+## 1.8 Linear Algebra Refresher
+
+**In one sentence:** This lesson was a refresher on the linear algebra we need for the regression module, covering vector operations, the three kinds of multiplication, the identity matrix and the inverse.
+
+**Key points:**
+- Vector operations like multiplying by a number and adding two vectors are done element by element, just like in NumPy. The dot product is different because it multiplies each pair of elements and then adds them up to give a single number, and in NumPy we use `u.dot(v)`.
+- Matrix-vector multiplication is a dot product of each row of the matrix with the vector, and matrix-matrix multiplication is matrix-vector multiplication repeated for each column of the second matrix. The sizes must match (the columns of the first must equal the rows of the second), and `dot` handles all three cases.
+- The identity matrix (`np.eye`) has ones on the diagonal and zeros everywhere else, and multiplying a matrix by it gives the same matrix back. The inverse (`np.linalg.inv`) only exists for square matrices, and multiplying a matrix by its inverse gives the identity matrix.
+
+**Example:** Multiplying two matrices with `U.dot(V)`
+
+**Still unsure about:** Nothing yet.
