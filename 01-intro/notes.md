@@ -101,3 +101,29 @@
 **Example:** Multiplying two matrices with `U.dot(V)`
 
 **Still unsure about:** Nothing yet.
+
+## 1.9 Introduction to Pandas
+
+**In one sentence:** This lesson was an introduction to Pandas, the library we use to work with tabular data in Python.
+
+**Key points:**
+- The main structure in Pandas is the DataFrame, which is a table where each column is a Series and each row has an index. We look at the first rows with `head()`, pick columns with `df['column']`, and access rows with `loc` (by index label) or `iloc` (by position).
+- Operations on columns are applied element by element like in NumPy, and we can filter rows with conditions such as `df[df['Year'] >= 2015]`, combining conditions with `&`. String columns can be cleaned with `.str`, for example `.str.lower()` and `.str.replace()`.
+- Summarizing operations include `describe()`, `nunique()` for the number of unique values and `isnull().sum()` for the number of missing values in each column. We can also use `groupby` to calculate something per group, such as the maximum price per transmission type.
+
+**Example:** Filtering a table of cars to show only the Nissans made after 2015
+
+**Still unsure about:** Pandas.
+
+## 1.10 Summary
+
+**In one sentence:** This was a short recap of everything covered in the first session.
+
+**Key points:**
+- Machine learning uses features and a target to train a model that predicts the target for new data, and it replaces hand-written rules in rule-based systems. Supervised learning is when we train on examples with known answers.
+- A machine learning project follows CRISP-DM, where modeling is only one of six steps, and the best model is chosen by splitting the data into train, validation and test sets.
+- The tools for the course are NumPy for arrays, linear algebra for matrix multiplication and the inverse, and Pandas for tables.
+
+**Example:** Car price prediction
+
+**Still unsure about:** Nothing yet.
